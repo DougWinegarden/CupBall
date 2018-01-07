@@ -38,7 +38,7 @@ public class MouseControls : MonoBehaviour
         //        bowl.transform.position = touch.position;
         //    }
         //}
-        Debug.Log(Input.mousePosition);
+        //Debug.Log(Input.mousePosition);
 
 
         RaycastHit hit;
@@ -59,7 +59,7 @@ public class MouseControls : MonoBehaviour
             //bowl.transform.position = bowlPos;
 
 
-            bowl.transform.position = Vector3.Slerp(bowlPos, bowl.transform.position, 0.25f);
+            bowl.transform.position = Vector3.Lerp(bowlPos, bowl.transform.position, 0.9f);
             //Transform objectHit = hit.transform;
 
             //Vector3 tempVect = bowlPos - bowl.transform.position;
